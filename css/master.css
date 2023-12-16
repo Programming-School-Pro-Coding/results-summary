@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap");
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  margin: 40px auto;
+  border-radius: 15px;
+  background-color: #ffff;
+  box-shadow: 0 0 20px 0 #f3f6fe, 0 5px 5px 0 #e9effd;
+  width: fit-content;
+  height: fit-content;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  width: 50%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(241, 100%, 89%);
+}
+
+.result-title {
+  font-weight: 600;
+}
+
+.result-degree {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  color: hsl(241, 100%, 89%);
+  font-size: 10px;
+}
+
+.result span {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.result-bold {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.result-text {
+  font-size: 10px;
+}
+
+.summary {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.summary-title {
+  font-weight: bold;
+  color: #2E2F42;
+}
+
+.summaries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+.summary-item {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: red;
+}
+
+.title {
+  gap: 10px;
+}
+
+.summary-item .title,
+.summary-item .title .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-item:nth-child(1) {
+  background-color: #FFF6F5;
+  color: #D66266;
+}
+
+.summary-item:nth-child(2) {
+  background-color: #FFFBF2;
+  color: #D7B163;
+}
+
+.summary-item:nth-child(3) {
+  background-color: #F2FBFA;
+  color: #22A887;
+}
+
+.summary-item:nth-child(4) {
+  background-color: #F3F3FD;
+  color: #3E48C6;
+}
+
+.continue {
+  transition: all 1s ease-in-out;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.continue:hover {
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
